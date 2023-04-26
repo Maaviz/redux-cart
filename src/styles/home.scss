@@ -1,0 +1,49 @@
+@import 'colors';
+
+
+.home{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.productCard {
+    background-color: $tertiary;
+    width: 200px;
+    margin: 2rem;
+    border-radius: 5px;
+    padding: 2rem;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height:100% ;
+        object-fit: cover;
+    }
+    h4 {
+        margin: 1rem;
+    }
+    button {
+          cursor: pointer;
+          background-color: $secondary;
+          border: none;
+          padding: 1rem;
+          color: $tertiary;
+          border-radius: 5px;
+          font-weight: 500;
+          width: 100%;
+          transition: all 0.5s;
+          &:hover{
+            background-color: $secondaryDark;
+          }
+          
+    }
+     &:hover{
+            transform: scale(1.05);
+          }
+}
